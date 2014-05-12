@@ -7,6 +7,7 @@
 //
 
 #import "TipViewController.h"
+#import "SettingsViewController.h"
 
 @interface TipViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *billAmountUIField;
@@ -16,6 +17,9 @@
 
 - (IBAction)tapOut:(id)sender;
 - (void)updateValues;
+- (void)onSettingsButton;
+- (void)updateValuesFromSettings;
+- (void)updateSelectedTipPercentageFromSettings;
 @end
 
 @implementation TipViewController
@@ -35,7 +39,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [self updateValues];
-    
+    [self updateValuesFromSettings];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Settings" style:UIBarButtonItemStylePlain target:self action:@selector(onSettingsButton)];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [self updateSelectedTipPercentageFromSettings];
 }
 
 - (void)didReceiveMemoryWarning
@@ -60,5 +69,23 @@
     
     self.tipAmountUIField.text = [NSString stringWithFormat:@"$%.2f", tipValue];
     self.totalAmountUIField.text = [NSString stringWithFormat:@"$%.2f", totalValue];
+}
+
+- (void)onSettingsButton {
+    [self.navigationController pushViewController:[[SettingsViewController alloc] init] animated:YES];
+}
+
+- (void)updateValuesFromSettings {
+    [self updateSelectedTipPercentageFromSettings];
+}
+
+- (void)updateSelectedTipPercentageFromSettings {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSNumber *defaultSelectedTipercentage = @([defaults integerForKey:@"defaultSelectedTipPercentage"]);
+    //if a default setting has never been set by the user, use 20%
+    if (defaultSelectedTipercentage == nil) {
+        defaultSelectedTipercentage = @(2);
+    }
+    [self.tipPercentageSegments setSelectedSegmentIndex:[defaultSelectedTipercentage intValue]];
 }
 @end

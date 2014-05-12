@@ -23,6 +23,10 @@
 		227ABABE191E125900C1C032 /* TipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 227ABABB191E125900C1C032 /* TipViewController.m */; };
 		227ABABF191E125900C1C032 /* TipViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 227ABABC191E125900C1C032 /* TipViewController.xib */; };
 		227ABAC0191E125900C1C032 /* TipViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 227ABABC191E125900C1C032 /* TipViewController.xib */; };
+		227ABAC4191EEC3400C1C032 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 227ABAC2191EEC3400C1C032 /* SettingsViewController.m */; };
+		227ABAC5191EEC3400C1C032 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 227ABAC2191EEC3400C1C032 /* SettingsViewController.m */; };
+		227ABAC6191EEC3400C1C032 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 227ABAC3191EEC3400C1C032 /* SettingsViewController.xib */; };
+		227ABAC7191EEC3400C1C032 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 227ABAC3191EEC3400C1C032 /* SettingsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,9 @@
 		227ABABA191E125900C1C032 /* TipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipViewController.h; sourceTree = "<group>"; };
 		227ABABB191E125900C1C032 /* TipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipViewController.m; sourceTree = "<group>"; };
 		227ABABC191E125900C1C032 /* TipViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TipViewController.xib; sourceTree = "<group>"; };
+		227ABAC1191EEC3400C1C032 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		227ABAC2191EEC3400C1C032 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		227ABAC3191EEC3400C1C032 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +128,9 @@
 				227ABABA191E125900C1C032 /* TipViewController.h */,
 				227ABABB191E125900C1C032 /* TipViewController.m */,
 				227ABABC191E125900C1C032 /* TipViewController.xib */,
+				227ABAC1191EEC3400C1C032 /* SettingsViewController.h */,
+				227ABAC2191EEC3400C1C032 /* SettingsViewController.m */,
+				227ABAC3191EEC3400C1C032 /* SettingsViewController.xib */,
 			);
 			path = TipCalculator;
 			sourceTree = "<group>";
@@ -232,6 +242,7 @@
 				227ABABF191E125900C1C032 /* TipViewController.xib in Resources */,
 				227ABA96191E04DD00C1C032 /* InfoPlist.strings in Resources */,
 				227ABA9E191E04DD00C1C032 /* Images.xcassets in Resources */,
+				227ABAC6191EEC3400C1C032 /* SettingsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				227ABAC0191E125900C1C032 /* TipViewController.xib in Resources */,
+				227ABAC7191EEC3400C1C032 /* SettingsViewController.xib in Resources */,
 				227ABAAF191E04DD00C1C032 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,6 +266,7 @@
 				227ABA9C191E04DD00C1C032 /* AppDelegate.m in Sources */,
 				227ABABD191E125900C1C032 /* TipViewController.m in Sources */,
 				227ABA98191E04DD00C1C032 /* main.m in Sources */,
+				227ABAC4191EEC3400C1C032 /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				227ABAC5191EEC3400C1C032 /* SettingsViewController.m in Sources */,
 				227ABABE191E125900C1C032 /* TipViewController.m in Sources */,
 				227ABAB1191E04DD00C1C032 /* TipCalculatorTests.m in Sources */,
 			);
